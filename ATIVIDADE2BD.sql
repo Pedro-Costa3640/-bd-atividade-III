@@ -20,3 +20,5 @@ CREATE VIEW vw_estoque_insuficiente AS
 SELECT id, nomeProduto, quantEstoque
 FROM Produtos
 WHERE quantEstoque < 5;
+
+SELECT * FROM vw_estoque_insuficiente;
