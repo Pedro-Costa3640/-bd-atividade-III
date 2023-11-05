@@ -32,10 +32,13 @@ VALUES('Marilene','123.123.123','Achei o atendimento favorável',1),
 ('Gregório','258.258.258','Que atendimento péssimo, o cara não fala nada com nada',3);
 
 CREATE VIEW vw_relacionamento_cliente_vendedor AS 
-SELECT  C.nomeC, feedback, V.nomeV
+SELECT  C.nomeC as 'Nome Cliente', 
+		C.feedback as 'Feedback', 
+        V.nomeV as 'Nome do Vendendor'
 FROM Vendedor AS V
 INNER JOIN Clientes AS C
-ON  C.Vendedor_ID = V.IdVendedor
-GROUP BY C.nomeC ;
+ON  C.Vendedor_ID = V.IdVendedor;
 
-drop database ATV3BD;
+select * from vw_relacionamento_cliente_vendedor;
+
+DROP VIEW IF EXISTS vw_relacionamento_cliente_vendedor;
