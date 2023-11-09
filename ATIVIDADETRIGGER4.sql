@@ -22,7 +22,7 @@ FOR EACH ROW
 BEGIN 
 	INSERT INTO Funcionarios_Demitidos (idFuncionarioDemi, nome, Cargo)
     VALUES (OLD.idFuncionarios, OLD.nome, OLD.Cargo);
-END;
+END
 //
 
 DELIMITER ;
