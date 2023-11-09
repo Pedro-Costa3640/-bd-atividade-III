@@ -14,7 +14,7 @@ BEFORE UPDATE ON Produto
 FOR EACH ROW
 BEGIN
   SET NEW.valor = NEW.valor * 10 / 100 + OLD.valor;
-END;
+END
 //
 DELIMITER ;
 
