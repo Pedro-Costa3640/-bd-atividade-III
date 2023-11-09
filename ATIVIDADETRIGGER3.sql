@@ -16,7 +16,7 @@ BEFORE UPDATE ON Produto
 FOR EACH ROW
 BEGIN
 	SET NEW.estoque = OLD.estoque - NEW.produtoVendido;
-END;
+END
 //
 DELIMITER ;
 
