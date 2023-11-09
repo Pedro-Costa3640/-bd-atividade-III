@@ -20,6 +20,8 @@ begin
     end if;
 END //
 
+DEMILITER ;
+
 INSERT INTO Produto(nomeProduto,dataValidade)
 VALUES('Pão Frânces','2023-11-09');
 INSERT INTO Produto(nomeProduto,dataValidade)
