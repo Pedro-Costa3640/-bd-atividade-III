@@ -25,7 +25,7 @@ FOR EACH ROW
 BEGIN
     DELETE FROM Dependentes
     WHERE Funcionario_ID = OLD.idFuncionarios;
-END;
+END
 //
 
 DELIMITER ;
